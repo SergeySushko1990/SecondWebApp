@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+    <bean id="test" class="ru.sergeys.secondapp.Main"/>
+    <bean id="gameCompare" class="ru.sergeys.secondapp.GameCompare"/>
+    <bean id="publisherGame" class="ru.sergeys.secondapp.PublisherGame"/>
+
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="text"/>
+        <property name="defaultEncoding" value="windows-1251"/>
+    </bean>
+
+</beans>
